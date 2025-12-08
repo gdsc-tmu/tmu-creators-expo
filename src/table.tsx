@@ -9,7 +9,7 @@ const events = [
   { start: "16:05", end: "16:20", name: "クラブ紹介：CORE さん", color: "bg-red-100" },
   { start: "16:20", end: "16:35", name: "クラブ紹介：AR会 さん", color: "bg-red-100" },
   { start: "16:35", end: "16:45", name: "クラブ紹介：GDGoC TMU", color: "bg-red-100" },
-  { start: "16:45", end: "16:55", name: "講演：システムデザイン学部 インダストリアルアート学科 馬場 先生", color: "bg-purple-100" },
+
   { start: "16:55", end: "17:05", name: "休憩・交流", color: "bg-gray-100" },
   { start: "17:05", end: "17:20", name: "クラブ紹介：メタバース研究会 さん", color: "bg-red-100" },
   { start: "17:20", end: "17:35", name: "クラブ紹介：TEXNITIS さん", color: "bg-red-100" },
@@ -102,9 +102,9 @@ const Timetable = () => {
             return (
               <motion.div
                 viewport={{ once: true, amount: 0.1 }}
-                initial={{ opacity: 0, translateY: 10}}
-                whileInView={{ opacity: 1, translateY: 0}}
-                transition={{ duration: 0.4, ease:'easeOut' }}
+                initial={{ opacity: 0, translateY: 10 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
                 key={index}
                 className={`absolute left-1 right-1 rounded border border-gray-200 p-2 text-sm overflow-hidden shadow-sm ${event.color || 'bg-blue-50'}`}
                 style={{
