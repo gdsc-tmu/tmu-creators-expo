@@ -8,5 +8,8 @@ export default defineConfig({
   server: {
     port: 3000
   },
-  base: '/tmu-creators-expo/'
+  base: '/tmu-creators-expo/',
+  build: {
+    outDir: 'docs'
+  }
 })

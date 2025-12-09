@@ -59,7 +59,7 @@ function App() {
         </div>
         <a
           target="_blank" rel="noopener noreferrer"
-          className="rounded-full bg-gray-900 text-white px-6 py-3 text-xl font-semibold absolute bottom-100 left-30 transform -translate-x-1/2 hover:bg-gray-700 transition-colors"
+          className="rounded-full bg-gray-900 text-white px-6 py-3 text-xl font-semibold absolute bottom-80 left-30 transform -translate-x-1/2 hover:bg-gray-700 transition-colors"
           href="https://x.com/intent/post?text=%E3%80%8CTMU%20Creators%20EXPO%E3%80%8D%0A2025%2F12%2F25%20%E9%96%8B%E5%82%AC%EF%BC%81%0Ahttps%3A%2F%2Fgdsc-tmu.github.io%2Ftmu-creators-expo">
           Xで共有する
         </a>
@@ -71,7 +71,7 @@ function App() {
             fontSize: '3em',
             color: '#555',
           }}
-          className="absolute bottom-20 left-10"
+          className="absolute bottom-20 left-3 sm:left-10"
         >
           ↓
         </motion.div>

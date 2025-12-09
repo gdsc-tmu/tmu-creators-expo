@@ -9,7 +9,6 @@ const events = [
   { start: "16:05", end: "16:20", name: "クラブ紹介：CORE さん", color: "bg-red-100" },
   { start: "16:20", end: "16:35", name: "クラブ紹介：AR会 さん", color: "bg-red-100" },
   { start: "16:35", end: "16:45", name: "クラブ紹介：GDGoC TMU", color: "bg-red-100" },
-
   { start: "16:55", end: "17:05", name: "休憩・交流", color: "bg-gray-100" },
   { start: "17:05", end: "17:20", name: "クラブ紹介：メタバース研究会 さん", color: "bg-red-100" },
   { start: "17:20", end: "17:35", name: "クラブ紹介：TEXNITIS さん", color: "bg-red-100" },
