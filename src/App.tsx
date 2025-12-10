@@ -27,9 +27,9 @@ function App() {
   return (
     <>
       <div className='relative w-full h-svh'>
-        <div className="absolute top-25 sm:top-15 left-10">
+        <div className="absolute top-15 md:top-25 sm:top-15 left-10">
           <TypeAnimation
-            className="text-3xl/12 sm:text-5xl/20 tracking-wider font-bold sm:font-semibold lg:text-6xl/23 whitespace-pre-line"
+            className="text-2xl/12 sm:text-5xl/20 tracking-wider font-bold sm:font-semibold lg:text-6xl/23 whitespace-pre-line"
 
             sequence={[
               `都立大の学生が\nつくっているものを\n見る・共有するイベント`, // actual line-break inside string literal also gets animated in new line, but ensure there are no leading spaces
@@ -43,7 +43,7 @@ function App() {
             ]}
             repeat={Infinity}
           />
-          <p className="mt-10 text-xl/8 sm:text-2xl/10 lg:text-3xl/15 font-bold tracking-wider">TMU Creators EXPO</p>
+          <p className="mt-5 text-xl/8 sm:text-2xl/10 lg:text-3xl/15 font-bold tracking-wider">TMU Creators EXPO</p>
         </div>
         <div className="absolute bottom-25 sm:bottom-25 right-7">
           <motion.h3
@@ -62,19 +62,21 @@ function App() {
             transition={{ delay: 0.4, duration: 0.4, ease: 'easeOut' }}
             className="text-md/8 sm:text-xl/10 lg:text-2xl/10 font-bold tracking-wider">東京都立大学 日野キャンパス 6号館 1F<br />オープンイノベーションスペース</motion.h3>
         </div>
-        <a
-          target="_blank" rel="noopener noreferrer"
-          className="rounded-full bg-gray-900 text-white px-6 py-3 text-xl font-semibold absolute bottom-80 left-30 transform -translate-x-1/2 hover:bg-gray-700 transition-colors"
-          href="https://x.com/intent/post?text=%E3%80%8CTMU%20Creators%20EXPO%E3%80%8D%0A2025%2F12%2F25%20%E9%96%8B%E5%82%AC%EF%BC%81%0Ahttps%3A%2F%2Fgdsc-tmu.github.io%2Ftmu-creators-expo">
-          Xで共有する
-        </a>
-        <a
-          target="_blank" rel="noopener noreferrer"
-          className="rounded-full bg-red-600 text-white px-6 py-3 text-md font-semibold absolute bottom-65 left-40 transform -translate-x-1/2 hover:bg-red-700 transition-colors"
-          href="https://gdsc-tmu.connpass.com/event/376912/">
-          Connpassで参加表明
-          <span className='text-xs'> ※任意</span>
-        </a>
+        <div className='flex flex-col items-start absolute bottom-70 left-6 sm:left-8 gap-3'>
+          <a
+            target="_blank" rel="noopener noreferrer"
+            className="block rounded-full bg-gray-900 text-white px-8 py-3 text-md sm:text-xl font-semibold hover:bg-gray-700 transition-colors"
+            href="https://x.com/intent/post?text=%E3%80%8CTMU%20Creators%20EXPO%E3%80%8D%0A2025%2F12%2F25%20%E9%96%8B%E5%82%AC%EF%BC%81%0Ahttps%3A%2F%2Fgdsc-tmu.github.io%2Ftmu-creators-expo">
+            Xで共有する
+          </a>
+          <a
+            target="_blank" rel="noopener noreferrer"
+            className="block rounded-full bg-red-600 text-white px-6 py-3 text-sm sm:text-lg font-semibold   hover:bg-red-700 transition-colors text-nowrap"
+            href="https://gdsc-tmu.connpass.com/event/376912/">
+            Connpassで参加表明
+            <span className='text-xs'> ※任意</span>
+          </a>
+        </div>
 
         <motion.div
           variants={arrowVariants as Variants}
@@ -84,7 +86,7 @@ function App() {
             fontSize: '3em',
             color: '#555',
           }}
-          className="absolute bottom-20 left-3 sm:left-10"
+          className="absolute bottom-20 sm:left-10"
         >
           ↓
         </motion.div>
