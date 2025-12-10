@@ -9,6 +9,7 @@ const events = [
   { start: "16:05", end: "16:20", name: "クラブ紹介：CORE さん", color: "bg-red-100" },
   { start: "16:20", end: "16:35", name: "クラブ紹介：AR会 さん", color: "bg-red-100" },
   { start: "16:35", end: "16:45", name: "クラブ紹介：GDGoC TMU", color: "bg-red-100" },
+  { start: "16:45", end: "16:55", name: "講演：システムデザイン学部 インダストリアルアート学科 馬場 哲晃 先生", color: "bg-purple-100" },
   { start: "16:55", end: "17:05", name: "休憩・交流", color: "bg-gray-100" },
   { start: "17:05", end: "17:20", name: "クラブ紹介：メタバース研究会 さん", color: "bg-red-100" },
   { start: "17:20", end: "17:35", name: "クラブ紹介：TEXNITIS さん", color: "bg-red-100" },
@@ -17,9 +18,9 @@ const events = [
   { start: "17:45", end: "17:50", name: "LT：らむはち さん", color: "bg-blue-100" },
   { start: "17:50", end: "17:55", name: "LT：Nyanziba さん", color: "bg-blue-100" },
   { start: "17:55", end: "18:00", name: "LT：みがき さん", color: "bg-blue-100" },
-  { start: "18:00", end: "18:15", name: "話題別交流会", color: "bg-green-100" },
-  { start: "18:15", end: "18:20", name: "クロージング", color: "bg-gray-100" },
-  { start: "18:20", end: "18:45", name: "自由交流会", color: "bg-green-100" },
+  { start: "18:00", end: "18:10", name: "話題別交流会", color: "bg-green-100" },
+  { start: "18:10", end: "18:15", name: "クロージング", color: "bg-gray-100" },
+  { start: "18:15", end: "18:45", name: "自由交流会", color: "bg-green-100" },
 
 ];
 
@@ -105,7 +106,7 @@ const Timetable = () => {
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
                 key={index}
-                className={`absolute left-1 right-1 rounded border border-gray-200 p-2 text-sm overflow-hidden shadow-sm ${event.color || 'bg-blue-50'}`}
+                className={`absolute left-1 right-1 rounded border border-gray-200 p-2 text-sm shadow-sm ${event.color || 'bg-blue-50'}`}
                 style={{
                   top: `${topPosition}px`,
                   height: `${height}px`,
@@ -114,7 +115,7 @@ const Timetable = () => {
                 <div className="font-bold text-xs text-gray-600 mb-1">
                   {event.start} - {event.end}
                 </div>
-                <div className="font-medium truncate">
+                <div className="font-medium">
                   {event.name}
                 </div>
               </motion.div>

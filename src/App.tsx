@@ -45,7 +45,12 @@ function App() {
           />
           <p className="mt-10 text-xl/8 sm:text-2xl/10 lg:text-3xl/15 font-bold tracking-wider">TMU Creators EXPO</p>
         </div>
-        <div className="absolute bottom-35 sm:bottom-25 right-7">
+        <div className="absolute bottom-25 sm:bottom-25 right-7">
+          <motion.h3
+            initial={{ opacity: 0, translateY: 10 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ delay: 0.3, duration: 0.4, ease: 'easeOut' }}
+            className="text-lg/7 sm:text-xl/10 tracking-wider font-extrabold sm:font-bold lg:text-2xl/13">予約不要 / 途中参加OK</motion.h3>
           <motion.h2
             initial={{ opacity: 0, translateY: 10 }}
             animate={{ opacity: 1, translateY: 0 }}
@@ -63,6 +68,14 @@ function App() {
           href="https://x.com/intent/post?text=%E3%80%8CTMU%20Creators%20EXPO%E3%80%8D%0A2025%2F12%2F25%20%E9%96%8B%E5%82%AC%EF%BC%81%0Ahttps%3A%2F%2Fgdsc-tmu.github.io%2Ftmu-creators-expo">
           Xで共有する
         </a>
+        <a
+          target="_blank" rel="noopener noreferrer"
+          className="rounded-full bg-red-600 text-white px-6 py-3 text-md font-semibold absolute bottom-65 left-40 transform -translate-x-1/2 hover:bg-red-700 transition-colors"
+          href="https://gdsc-tmu.connpass.com/event/376912/">
+          Connpassで参加表明
+          <span className='text-xs'> ※任意</span>
+        </a>
+
         <motion.div
           variants={arrowVariants as Variants}
           initial="hidden"
@@ -103,10 +116,17 @@ function App() {
 
           </ul>
         </div>
+        <div className="bg-white backdrop-blur-2xl p-9 rounded-lg w-full shadow-lg tracking-wider">
+          <h1 className='text-2xl sm:text-3xl font-bold text-green-500'>参加方法</h1>
+          <div className='h-4 text-md/15 sm:text-lg/20'></div>
+          <p>参加費は<span className='font-bold'>無料，事前予約も不要</span>です．当日直接会場にお越しください．</p>
+          <p>※connpassでの参加登録も可能です！（必須ではありません）</p>
+        </div>
+
         <p className='pt-5 text-4xl self-center font-medium'>タイムテーブル</p>
         <Timetable />
         <p className='pt-5 text-4xl self-center font-medium'>主催</p>
-        <p className='text-xl self-center font-medium'>Google Developer Groups on Campus TMU</p>
+        <p className='text-xl text-center self-center font-medium'>Google Developer Groups on Campus TMU</p>
 
       </div>
 
