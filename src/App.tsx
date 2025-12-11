@@ -137,7 +137,7 @@ function App() {
           <Events />
         </div>
 
-        <div className='pt-10 self-center'>
+        <div className='pt-10 self-center px-6'>
           <h2 className='text-4xl self-center font-medium text-center mb-10'>注意事項</h2>
           <ul className='list-disc list-inside'>
             <li className='mb-4'>イベント内では，以下の行為は行わないでください．</li>
