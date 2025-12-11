@@ -1,7 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import { motion, type Variants } from "motion/react"
 import Timetable from './table';
-
+import { Events } from './event';
 
 function App() {
   const arrowVariants = {
@@ -127,10 +127,36 @@ function App() {
           <p>※connpassでの参加登録も可能です！（必須ではありません）</p>
         </div>
 
-        <p className='pt-5 text-4xl self-center font-medium'>タイムテーブル</p>
+        <a className="block rounded-full bg-gray-900 text-white w-full p-6 text-xl text-center backdrop-blur-lg hover:bg-gray-700" href="https://x.com/GdscTmu" target="_blank">最新情報は公式Xから！</a>
+
+        <p className='mt-10 text-4xl self-center font-medium'>タイムテーブル</p>
         <Timetable />
-        <p className='pt-5 text-4xl self-center font-medium'>主催</p>
+
+        <div className='pt-10'>
+          <h2 className='text-4xl self-center font-medium text-center mb-10'>企画一覧</h2>
+          <Events />
+        </div>
+
+        <div className='pt-10 self-center'>
+          <h2 className='text-4xl self-center font-medium text-center mb-10'>注意事項</h2>
+          <ul className='list-disc list-inside'>
+            <li className='mb-4'>イベント内では，以下の行為は行わないでください．</li>
+            <li className='ml-4'>本イベントにおける営利活動</li>
+            <li className='ml-4'>学外団体による勧誘行為</li>
+            <li className='ml-4'>会場内での飲酒・喫煙</li>
+            <li className='ml-4'>その他，他の参加者を不快にする行動，および他の参加者に危害を及ぼす行動</li>
+          </ul>
+          <ul className='list-disc list-inside mt-10'>
+            <li className='mb-4'>下記の行動規範への同意をお願いします．</li>
+            <li className='ml-4 text-blue-500 underline'><a href='https://docs.google.com/document/d/19ro-uIGLWc5LqtCb8YUTvYXSwaH-GrdB0Bs9ha4Kw9U/edit?tab=t.0#heading=h.ngpe4rl9dyyb' target='_blank'>行動規範</a></li>
+            <li className='ml-4'>ハラスメント行為に関して，および他にお困りのことがありましたら，<br />会場のスタッフにお声がけいただくか，<code>gdsctmu.jp@gmail.com</code>までご連絡ください．</li>
+          </ul>
+        </div>
+
+        <p className='text-4xl self-center font-medium mt-10'>主催</p>
         <p className='text-xl text-center self-center font-medium'>Google Developer Groups on Campus TMU</p>
+
+
 
       </div>
 
